@@ -1,0 +1,9 @@
+
+javascript is most popular language in world or it mostly use web language.
+Tha java and javascript are different language
+
+The echma is orgination which decide sum guidelines and rules for technical thinks 
+so javascript accepts the all guidelines of echma orgination
+The es6 is the most popular verstion of es6 or ecma 2015 
+In this verstion we know about the let const arrow function promises and many more.
+
