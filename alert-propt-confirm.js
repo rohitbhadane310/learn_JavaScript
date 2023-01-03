@@ -1,11 +1,12 @@
 
 
-let age = prompt('Enter your age');
+let response = confirm('your take subscription?');
 
-if(age < 18){
-    document.write('Your are not eligible for vote');
+if(response)
+{
+    document.write('welcome to our website');
 }
 else
 {
-    document.write('Your are eligible for vote');
+    document.write('pleaser take the subscription');
 }
