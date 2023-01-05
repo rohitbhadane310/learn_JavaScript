@@ -2,10 +2,17 @@
 
 // javascript typeof
 
-let type = 12;
+let value = "12";
 
-let value = console.log(typeof type);
+console.log(value);
+let check = typeof value;
 
-let newValue = String(value);
-console.log(newValue);
-console.log(typeof newValue);
+console.log(check);
+
+if(check == isNaN)
+{
+    console.log('thank you for visit the website');
+}
+else{
+    console.log('please enter the string only');
+}
