@@ -1,12 +1,8 @@
 
-//javascript is case sensitive
+// add element in array using js
 
-let str = "javascript Time";
+let sub = ["math" , "bio" , "physics"];
 
-if(str == "javascript time"){
-    console.log("This both are equal");
-}
-else
-{
-    console.log("This are not equal");
-}
+sub.unshift("chem");
+
+console.log(sub);
