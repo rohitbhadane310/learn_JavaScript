@@ -1,9 +1,13 @@
 
 // object in js
 
-let me = {
-    fname: 'Rohit',
-    lname: 'Bhadane'
-}
+let person = {
+     fname: 'Rohit',
+     lname: 'Bhadane',
+     age: 23
+};
 
-console.log(me.fname);
+for(let key in person)
+{
+    console.log(key + ":" + person[key]);
+}
