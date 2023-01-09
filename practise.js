@@ -15,5 +15,10 @@ person.greet = function(){
     console.log('Now i am greeting');
 }
 
+person.walk = function(){
+    console.log('I can walk now');
+}
+
 person.sayHello();
 person.greet();
+person.walk();
