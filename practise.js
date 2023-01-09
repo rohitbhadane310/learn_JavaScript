@@ -1,13 +1,9 @@
 
-// immmediatel invoked function
-(function (){
-    console.log('THis is also true');
-})();
+// object in js
 
-// anonymous function
-
-let show = function(){
-    console.log('This is the anonymous function');
+let me = {
+    fname: 'Rohit',
+    lname: 'Bhadane'
 }
 
-show();
+console.log(me.fname);
