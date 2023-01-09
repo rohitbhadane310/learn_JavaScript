@@ -1,18 +1,13 @@
-function mul(){
-    if(arguments.length == 0)
-    {
-       console.log('No arguments pass !');
-    }
-    else
-    {
-        let sum = 1;
-        
-        for(let i = 0; i < arguments.length; i++)
-        {
-            sum = sum * arguments[i];
-        }
-        console.log(sum);
-    }
+
+// immmediatel invoked function
+(function (){
+    console.log('THis is also true');
+})();
+
+// anonymous function
+
+let show = function(){
+    console.log('This is the anonymous function');
 }
 
-mul(4 , 5, 6);
+show();
