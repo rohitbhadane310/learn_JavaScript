@@ -1,24 +1,14 @@
 
-// object in js
+// new keywords
 
-let person = {
-    fname: 'Rohit',
-    lname: 'Bhadane',
-    age: 34
+let person = new Object;
+
+person.name = "Rohit";
+person.age = 34;
+
+// console.log(person);
+// console.log(person.age);
+
+for(key in person){
+    console.log(person[key]);
 }
-
-person.sayHello = function(){
-    console.log('THis is good');
-}
-
-person.greet = function(){
-    console.log('Now i am greeting');
-}
-
-person.walk = function(){
-    console.log('I can walk now');
-}
-
-person.sayHello();
-person.greet();
-person.walk();
