@@ -5,12 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
 <body>
-    <h1 id="head">This is the basic tutorial of javascript</h1>
+     
+     <li class="cla">list1</li>
+     <li id="first">list2</li>
+     <li class="cla">list3</li>
 
+     <script>
 
-    <script src="script.js"></script>
+        let val = document.getElementById('first');
+
+        val.innerHTML = 'your are the greate';
+
+        let cls = document.getElementsByClassName('cla');
+
+        for(let i = 0; i < cls.length; i++)
+        {
+            console.log(cls[i].innerHTML);
+        }
+     </script>
 </body>
 </html>
