@@ -1,14 +1,13 @@
 
-// new keywords
+// object constructor
 
-let person = new Object;
-
-person.name = "Rohit";
-person.age = 34;
-
-// console.log(person);
-// console.log(person.age);
-
-for(key in person){
-    console.log(person[key]);
+function Student (first , last , ag , cla){
+    this.firstName = first,
+    this.lastName = last,
+    this.age = ag,
+    this.class = cla
 }
+
+let student1 = new Student("Rohit" , "Bhadane" , 23 , 5);
+
+console.log(student1);
