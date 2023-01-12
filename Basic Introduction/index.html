@@ -7,33 +7,22 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <div id="intro">
+        <h1>This the webpage</h1>
+    </div>
 
-     <li class="cla">list1</li>
-     <li id="first">list2</li>
-     <li class="cla">list3</li>
-
-     <h2>heading 1</h2>
-     <p class="intro p">para 1</p>
-     <h2 id="headval">heading 2</h2>
-     <p>para 2</p>
-     <h2>heading 3</h2>
-     <p class="intro">para 3</p>
-
-     <script>
-
-        let para = document.getElementsByClassName('intro p');
-
-        for(let i = 0; i< para.length; i++)
-        {
-            para[i].innerHTML = "<p> THis is another para </p>"
-        }
-
-        let headingVal = document.querySelectorAll('li#first');
-
-        for(let i = 0; i < headingVal.length; i++)
-        {
-            console.log(headingVal[i].innerHTML);
-        }
-     </script>
+    <p>Hello this is the p tag</p>
 </body>
+
+<script>
+
+    let val = document.getElementById("intro");
+
+    let content = val.innerHTML;
+
+    console.log(content);
+
+
+</script>
 </html>
