@@ -17,12 +17,15 @@
 
 <script>
 
-    let val = document.getElementById("intro");
+    let parent = document.body;
 
-    let item = document.createElement("li");
-    item.textContent = "new list 5";
+    let ele = document.createElement("h2");
+    ele.textContent = "this is new text";
 
-    val.appendChild(item);
+    let list = document.getElementById('intro');
+    
+    parent.insertBefore(ele , list);
+
 
 </script>
 </html>
