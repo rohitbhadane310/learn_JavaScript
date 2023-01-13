@@ -10,21 +10,22 @@
     
     <ul id="menu">
         <li>home</li>
-        <li>about</li>
+        <li>product</li>
         <li>contact us</li>
     </ul>
 
     <script>
-
+        
         let element = document.getElementById("menu");
 
-        let cloneElement = menu.cloneNode(true);
+        let item = document.createElement("li");
+        item.textContent = "services";
 
-        cloneElement.id = "this is";
-        cloneElement.className = "This is class";
+        let val = element.firstElementChild.nextElementSibling;
+        console.log(val);
 
-        document.body.appendChild(cloneElement);
-
+        element.replaceChild(item , val);
+        
     </script>
 </body>
 </html>
