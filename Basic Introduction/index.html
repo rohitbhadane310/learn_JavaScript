@@ -8,20 +8,22 @@
 </head>
 <body>
     
-
     <ul id="menu">
         <li>home</li>
-        <li>product</li>
+        <li>about</li>
         <li>contact us</li>
     </ul>
 
     <script>
 
-        let elm = document.getElementById("menu");
+        let element = document.getElementById("menu");
 
-        let removeitem = elm.firstElementChild.nextElementSibling;
+        let cloneElement = menu.cloneNode(true);
 
-        elm.removeChild(removeitem);
+        cloneElement.id = "this is";
+        cloneElement.className = "This is class";
+
+        document.body.appendChild(cloneElement);
 
     </script>
 </body>
