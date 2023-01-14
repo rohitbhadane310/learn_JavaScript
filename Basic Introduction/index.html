@@ -8,18 +8,15 @@
 </head>
 <body>
     
-    <div id="intro">
-        <h2>This is heading</h2>
-        <p>This is the para tag</p>
-    </div>
+    <button id="btn">click me</button>
 
     <script>
 
-        let element = document.getElementById("intro");
+        let element = document.getElementById('btn');
 
-        let item = "<h1> The new tag </h1>";
+        element.setAttribute('class' , 'newClass');
 
-        element.insertAdjacentHTML("beforeend" , item);
+        
     </script>
 </body>
 </html>
