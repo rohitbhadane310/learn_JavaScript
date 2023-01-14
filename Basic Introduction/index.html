@@ -8,24 +8,18 @@
 </head>
 <body>
     
-    <ul id="menu">
-        <li>home</li>
-        <li>product</li>
-        <li>contact us</li>
-    </ul>
+    <div id="intro">
+        <h2>This is heading</h2>
+        <p>This is the para tag</p>
+    </div>
 
     <script>
-        
-        let element = document.getElementById("menu");
 
-        let item = document.createElement("li");
-        item.textContent = "services";
+        let element = document.getElementById("intro");
 
-        let val = element.firstElementChild.nextElementSibling;
-        console.log(val);
+        let item = "<h1> The new tag </h1>";
 
-        element.replaceChild(item , val);
-        
+        element.insertAdjacentHTML("beforeend" , item);
     </script>
 </body>
 </html>
