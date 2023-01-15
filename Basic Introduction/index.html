@@ -8,20 +8,24 @@
 </head>
 <body>
     
-    <button id="btn" name="form">click me</button>
+    <button id="btn">click me</button>
 
-    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quasi id numquam culpa ad dolore consequatur accusantium aut, qui odio totam tempora architecto exercitationem ex harum a unde possimus! Perferendis.</p>
+    <button id="btnTwo">subscribe</button>
 
-    
+    <div id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deserunt.</div>
+
     <script>
+        let element = document.getElementById('btn');
 
-        let btn = document.getElementById('btn');
+        element.style.cssText = 'color: cyan; background-color: red';
 
-        btn.style.cssText = 'background-color: red; color:white';
+        let paraElement = document.getElementById('para');
 
-        let paragraph = document.getElementById('para');
+        paraElement.setAttribute('style' , 'background-color: cyan');
 
-        paragraph.style.cssText = 'background-color: red';
+        let secondElement = document.getElementById('btnTwo');
+
+        secondElement.style.color = "red";
 
 
     </script>
