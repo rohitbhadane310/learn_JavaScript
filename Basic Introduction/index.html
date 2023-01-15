@@ -8,16 +8,22 @@
 </head>
 <body>
     
-    <button id="old id">click me</button>
+    <button id="btn" name="form">click me</button>
 
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quasi id numquam culpa ad dolore consequatur accusantium aut, qui odio totam tempora architecto exercitationem ex harum a unde possimus! Perferendis.</p>
+
+    
     <script>
-        let element = document.getElementById('old id');
 
-        let val = element.getAttribute('id');
+        let btn = document.getElementById('btn');
 
-        console.log(val);
+        btn.style.cssText = 'background-color: red; color:white';
 
-        
+        let paragraph = document.getElementById('para');
+
+        paragraph.style.cssText = 'background-color: red';
+
+
     </script>
 </body>
 </html>
