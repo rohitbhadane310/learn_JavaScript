@@ -8,24 +8,34 @@
 
     <style>
 
-        #btn{
-            background-color: red;
-            color: white;
+        .color{
+            background-color: yellow;
         }
 
+        .dim{
+            border: 1px solid red;
+            padding: 100px;
+            color: red;
+        }
     </style>
 </head>
 <body>
-
-    <button id="btn">click me</button>
+    
+    <div id="box" class="color dim">
+        <p>This is the dummy text!</p>
+    </div>
 
     <script>
 
-        let element = document.getElementById('btn');
+        let Box = document.getElementById('box');
 
-        let css = getComputedStyle(btn);
+        console.log(Box.classList);
 
-        console.log(css.backgroundColor);
+        for(let css of Box.classList)
+        {
+            console.log(css);
+        }
+
     </script>
 </body>
 </html>
