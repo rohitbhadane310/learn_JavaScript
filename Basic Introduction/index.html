@@ -5,29 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        #btn{
+            background-color: red;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
-    
+
     <button id="btn">click me</button>
 
-    <button id="btnTwo">subscribe</button>
-
-    <div id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deserunt.</div>
-
     <script>
+
         let element = document.getElementById('btn');
 
-        element.style.cssText = 'color: cyan; background-color: red';
+        let css = getComputedStyle(btn);
 
-        let paraElement = document.getElementById('para');
-
-        paraElement.setAttribute('style' , 'background-color: cyan');
-
-        let secondElement = document.getElementById('btnTwo');
-
-        secondElement.style.color = "red";
-
-
+        console.log(css);
     </script>
 </body>
 </html>
