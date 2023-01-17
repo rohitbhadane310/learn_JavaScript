@@ -34,7 +34,17 @@
 
         let paragraph = document.getElementById('para');
 
-        paragraph.addEventListener('click' , otherFunction);
+        paragraph.addEventListener('click' , function(){
+            alert('This is the para function');
+        });
+
+        element.addEventListener('mouseover' , function(){
+            alert('This is the trigger the mouseover event');
+        })
+
+        element.addEventListener('mouseout' , function(){
+            alert('This is the trigger the mouseout event');
+        })
         
     </script>
 </body>
