@@ -8,44 +8,27 @@
 </head>
 <body>
     
-
     <button id="btn">click me</button>
-
-    <p id="para">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, unde!
-    </p>
-
 
     <script>
 
-        function myFunction()
-        {
-            alert('This button was clicked');
-        }
-
-        function otherFunction()
-        {
-            alert('This is the para was clicked ');
-        }
-
         let element = document.getElementById('btn');
 
-        element.addEventListener('click' , myFunction);
+        function click1(){
+            console.log('click 1 is activated');
+        }
 
-        let paragraph = document.getElementById('para');
+        function click2(){
+            console.log('click2 is activated');
+        }
 
-        paragraph.addEventListener('click' , function(){
-            alert('This is the para function');
-        });
+        element.addEventListener('click' , click1);
+        element.addEventListener('click' , click2);
 
-        element.addEventListener('mouseover' , function(){
-            alert('This is the trigger the mouseover event');
-        })
-
-        element.addEventListener('mouseout' , function(){
-            alert('This is the trigger the mouseout event');
-        })
+        element.removeEventListener('click' , click2);
         
     </script>
+
+    
 </body>
 </html>
