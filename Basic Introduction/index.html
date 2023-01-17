@@ -9,7 +9,11 @@
 <body>
     
 
-    <button id="btn" onclick="myFunction()">click me</button>
+    <button id="btn">click me</button>
+
+    <p id="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, unde!
+    </p>
 
 
     <script>
@@ -18,6 +22,19 @@
         {
             alert('This button was clicked');
         }
+
+        function otherFunction()
+        {
+            alert('This is the para was clicked ');
+        }
+
+        let element = document.getElementById('btn');
+
+        element.addEventListener('click' , myFunction);
+
+        let paragraph = document.getElementById('para');
+
+        paragraph.addEventListener('click' , otherFunction);
         
     </script>
 </body>
