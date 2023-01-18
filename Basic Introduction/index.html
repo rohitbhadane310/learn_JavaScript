@@ -17,17 +17,17 @@
 
     <script>
 
-        window.addEventListener('wheel' , function(event){
+       window.addEventListener('scroll' , function(){
 
-            if(event.deltaY < 0)
+            if(window.pageYOffset > 200)
             {
-                console.log('scrolling up');
+                document.body.style.backgroundColor = 'red';
             }
-            else if(event.deltaY > 0)
+            else
             {
-                console.log('scrolling down');
+                document.body.style.backgroundColor = 'white';
             }
-        })
+       })
     </script>
     
 </body>
