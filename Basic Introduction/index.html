@@ -8,26 +8,19 @@
 
     <style>
 
-        #box{
-            height: 100px;
-            width: 100px;
-            background-color: blueviolet;
-            cursor: pointer;
+        body{
+            height: 300vh;
         }
-
     </style>
 </head>
 <body>
-    
-    <div id="box" ondblclick="myFunc()"></div>
 
     <script>
 
-        window.addEventListener('keydown' , cheakKey)
-
-        function cheakKey(event){
-            console.log(event.key)
-        }
+        window.addEventListener('scroll' , function(){
+            console.log("scrolling.....");
+        })
     </script>
+    
 </body>
 </html>
