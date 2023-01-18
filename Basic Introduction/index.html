@@ -5,30 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-
-        body{
-            height: 300vh;
-        }
-    </style>
 </head>
 <body>
 
+    <form action="">
+
+        Name <input type="text" id="myInput">
+    </form>
+
+
     <script>
 
-       window.addEventListener('scroll' , function(){
+        let x = document.getElementById('myInput');
 
-            if(window.pageYOffset > 200)
-            {
-                document.body.style.backgroundColor = 'red';
-            }
-            else
-            {
-                document.body.style.backgroundColor = 'white';
-            }
-       })
+        x.addEventListener('focus' , myFocusFunction);
+        x.addEventListener('blur' , myBlurFuction);
+
+        function myFocusFunction(){
+            x.style.background = 'yellow';
+        }
+
+        function myBlurFuction(){
+            x.style.background = 'white';
+        }
     </script>
-    
 </body>
 </html>
