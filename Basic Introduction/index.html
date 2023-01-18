@@ -5,30 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 <body>
     
-    <button id="btn">click me</button>
+    <div id="box" ondblclick="myFunc()"></div>
 
     <script>
 
-        let element = document.getElementById('btn');
+        window.addEventListener('keydown' , cheakKey)
 
-        function click1(){
-            console.log('click 1 is activated');
+        function cheakKey(event){
+            console.log(event.key)
         }
-
-        function click2(){
-            console.log('click2 is activated');
-        }
-
-        element.addEventListener('click' , click1);
-        element.addEventListener('click' , click2);
-
-        element.removeEventListener('click' , click2);
-        
     </script>
-
-    
 </body>
 </html>
