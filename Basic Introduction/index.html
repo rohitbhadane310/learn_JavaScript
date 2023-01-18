@@ -20,6 +20,9 @@
 
         x.addEventListener('focus' , myFocusFunction);
         x.addEventListener('blur' , myBlurFuction);
+        x.addEventListener('input' , function(){
+            console.log(this.value);
+        })
 
         function myFocusFunction(){
             x.style.background = 'yellow';
