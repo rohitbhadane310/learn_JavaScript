@@ -7,30 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-
-    <form action="">
-
-        Name <input type="text" id="myInput">
-    </form>
-
-
-    <script>
-
-        let x = document.getElementById('myInput');
-
-        x.addEventListener('focus' , myFocusFunction);
-        x.addEventListener('blur' , myBlurFuction);
-        x.addEventListener('input' , function(){
-            console.log(this.value);
-        })
-
-        function myFocusFunction(){
-            x.style.background = 'yellow';
-        }
-
-        function myBlurFuction(){
-            x.style.background = 'white';
-        }
-    </script>
+    
+    <div id="myDiv">
+        
+    </div>
 </body>
 </html>
