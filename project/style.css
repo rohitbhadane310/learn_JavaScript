@@ -1,0 +1,17 @@
+body{
+    background-color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 40%;
+    margin-top: 15%;
+    border: 2px solid red;
+    text-align: center;
+}
+
+.btn{
+    background-color: transparent;
+    border: 1px solid white;
+}
