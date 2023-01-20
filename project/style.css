@@ -1,9 +1,9 @@
-body{
+body {
     background-color: orange;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.container{
+.container {
     margin: auto;
     width: 40%;
     margin-top: 15%;
@@ -11,7 +11,18 @@ body{
     text-align: center;
 }
 
-.btn{
+.btn {
     background-color: transparent;
-    border: 1px solid white;
+    border: 1.3px solid white;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+p{
+    margin-top: 2rem;
 }
