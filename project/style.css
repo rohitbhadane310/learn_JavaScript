@@ -12,6 +12,7 @@ body {
 }
 
 .btn {
+    display: inline-block;
     background-color: transparent;
     border: 1.3px solid white;
     width: 8rem;
@@ -23,6 +24,12 @@ body {
     margin-top: 2rem;
 }
 
+.btn:hover{
+    background-color: cyan;
+    transition: all 0.4s;
+}
+
 p{
+    display: inline-block;
     margin-top: 2rem;
 }
