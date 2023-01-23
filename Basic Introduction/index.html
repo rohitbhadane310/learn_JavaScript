@@ -8,8 +8,19 @@
 </head>
 <body>
     
+    <a href="https://www.google.com" id="anchor">click me</a>
     <div id="myDiv">
         container
     </div>
+
+    <script>
+
+        let link = document.getElementById('anchor');
+
+        link.addEventListener('click' , function(e){
+            console.log("link clicked....");
+            e.preventDefault();
+        })
+    </script>
 </body>
 </html>
