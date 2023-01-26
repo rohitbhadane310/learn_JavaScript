@@ -5,51 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-
-        body{
-            padding: 100px;
-            background-color: cornsilk;
-        }
-
-        #myDiv{
-            padding: 50px;
-            background-color: darkblue;
-        }
-
-
-    </style>
 </head>
 <body>
     
-    <div id="myDiv">
-        <button id="btn">click me</button>
-    </div>
-
 
     <script>
 
-        let d = document.getElementById('myDiv');
-        let b = document.getElementById('btn');
+        // The variables are bydefault use the window objects
 
-        b.addEventListener('click' , btnClicked , true);
-        d.addEventListener('click' , divClicked , true);
+        // var is the represent the global object
+        // let is not defined the variable global object
+        // so let gives the undefined
 
-        document.body.addEventListener('click' , bodyClicked , true);
+        var x = 'Hello';
 
-        function btnClicked(event){
-            console.log('btn clicked.....');
-            event.stopPropagation();
-        }
-
-        function divClicked(){
-            console.log('div clicked......');
-        }
-
-        function bodyClicked(){
-            console.log('body clicked.....');
-        }
+        console.log(window.x);
     </script>
 </body>
 </html>
