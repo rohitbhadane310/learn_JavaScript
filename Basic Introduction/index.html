@@ -38,8 +38,9 @@
 
         document.body.addEventListener('click' , bodyClicked , true);
 
-        function btnClicked(){
+        function btnClicked(event){
             console.log('btn clicked.....');
+            event.stopPropagation();
         }
 
         function divClicked(){
