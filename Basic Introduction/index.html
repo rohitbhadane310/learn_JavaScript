@@ -33,10 +33,10 @@
         let d = document.getElementById('myDiv');
         let b = document.getElementById('btn');
 
-        b.addEventListener('click' , btnClicked);
-        d.addEventListener('click' , divClicked);
+        b.addEventListener('click' , btnClicked , true);
+        d.addEventListener('click' , divClicked , true);
 
-        document.body.addEventListener('click' , bodyClicked);
+        document.body.addEventListener('click' , bodyClicked , true);
 
         function btnClicked(){
             console.log('btn clicked.....');
