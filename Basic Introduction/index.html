@@ -11,11 +11,19 @@
 
     <script>
 
-       setTimeout(myFunction , 5000);
+       let timeout = setTimeout(myFunction , 5000);
 
        function myFunction(){
         alert('This is the real method of settimeout function ')
        }
+
+       let ans =  prompt('Enter your age');
+
+       if(ans < 18)
+       {
+         clearTimeout(timeout);
+       }
+       
     </script>
 </body>
 </html>
