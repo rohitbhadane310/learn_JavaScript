@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    
 
-    <script>
 
-       let timeout = setTimeout(myFunction , 5000);
+  <script>
 
-       function myFunction(){
-        alert('This is the real method of settimeout function ')
-       }
+    let stopTime = setInterval(myFunction , 2000);
 
-       let ans =  prompt('Enter your age');
+    function myFunction(){
+      console.log('please the subscribe...')
+    }
 
-       if(ans < 18)
-       {
-         clearTimeout(timeout);
-       }
-       
-    </script>
+    clearInterval(stopTime);
+  </script>
 </body>
 </html>
