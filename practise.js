@@ -23,5 +23,9 @@ const datas = [
       document.body.innerHTML = output;
     } , 1000)
   }
+
+  function set(){
+    console.log('practise');
+  }
   
   getData();
