@@ -27,5 +27,9 @@ const datas = [
   function set(){
     console.log('practise');
   }
+
+  function other(){
+    console.log('other');
+  }
   
   getData();
