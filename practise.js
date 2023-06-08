@@ -1,5 +1,5 @@
 
-
+// callback function 
 function sayHello(){
   console.log("Hello");
 }
@@ -19,3 +19,20 @@ let b = 29;
 
 add(a , b , sayHello);
 add(a , b , sayHi);
+
+
+add(23 , 12 , function(){
+  console.log("bye....");
+})
+
+
+
+
+// asynchronous javascript
+
+setTimeout(myfunction , 3000);
+
+function myfunction(){
+  console.log('hi..');
+}
+

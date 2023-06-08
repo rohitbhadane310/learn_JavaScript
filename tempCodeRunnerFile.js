@@ -1,3 +1,5 @@
-for(key in person){
-//     console.log(key[person]);
-// }
+setTimeout(myfunction , 3000);
+
+function myfunction(){
+  console.log('hi..');
+}
