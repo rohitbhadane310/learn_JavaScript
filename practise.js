@@ -1,35 +1,21 @@
 
-const datas = [
-    {
-      name: 'rohit',
-      age: 19,
-      profession: 'software engineer'
-    },
-    {
-      name: 'sumit',
-      age: 20,
-      profession: 'web designer'
-    }
-  ];
-  
-  function getData(){
-    setTimeout(()=>{
-      let output = "";
-  
-      datas.forEach((data , index)=>{
-        output += `<li>${data.name}: ${data.age}</li>`
-      })
-  
-      document.body.innerHTML = output;
-    } , 1000)
-  }
 
-  function set(){
-    console.log('practise');
-  }
+function sayHello(){
+  console.log("Hello");
+}
 
-  function other(){
-    console.log('other');
-  }
-  
-  getData();
+function sayHi(){
+  console.log("Hi...");
+}
+
+function add(num1 , num2 , callback)
+{
+    console.log(num1 + num2);
+    callback();
+}
+
+let a = 10;
+let b = 29;
+
+add(a , b , sayHello);
+add(a , b , sayHi);
